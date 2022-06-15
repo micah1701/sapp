@@ -10,13 +10,13 @@ $original_pdf = '../examples/LAB.pdf';
 $firstSigned_pdf = 'files/pdfs/LAB1.pdf';
 $secondSigned_pdf = 'files/pdfs/LAB2.pdf';
 
-$sourcePath = $original_pdf;
-$destinationPath = $firstSigned_pdf;
+$sourcePath = $firstSigned_pdf;
+$destinationPath = $secondSigned_pdf;
 
 $p12 = "C:\\Program Files\\OpenSSL-Win64\\bin\\example.p12";
 $initials = "files/initials/initials_mjm.jpg";
 
-$imageCoordinates = [533,250]; // second time: [533,350];
+$imageCoordinates = [533,350]; // first time: [533,250];
 
 $argv = ['',$sourcePath,$initials,$p12];
 if (!file_exists($argv[1])) {
